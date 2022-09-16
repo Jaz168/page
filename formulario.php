@@ -15,6 +15,6 @@ $remitente = "From: sara.jaz987@gmail.com"; //declaramos también el correo remi
 
 mail($destino, $asunto, $mensaje, $remitente); 
 
-header("Location:index.php?i=ok"); //declaramos que cuando se mande el mensaje este vuelva a cargar toda la pagina
+header("Location:index.html?i=ok"); //declaramos que cuando se mande el mensaje este vuelva a cargar toda la pagina
 
 ?>

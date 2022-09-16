@@ -185,14 +185,7 @@
                         <!--SECCIÓN DE CONTACTO-->
                         <section id="contacto"><!--"id" elemento que diferencia a contacto de todos los demás y cuando seccionen los manda a esta sección.-->
 
-                        <?php  //iniciamos php, para el envio del formulario
-                        if(@$_GET['i']=='ok') { //ponemos una condición, la cual si se cumple se enviará el mensaje
-                         //formulario ok envio 
-                         ?>
-                         <h3> I have received your message. I will contact you as soon as possible. </h3>
-                        <?php }
-                        else {
-                        ?>
+                      
 
                         <div class="secciones"><!--Se pones la clase secciones, para que al envio del formulario la pagina vuelva a cargar-->
                         <h3>Contact</h3><!--Título de esta sección-->
@@ -200,7 +193,7 @@
                         <input type="text" placeholder="Name" name="nombre" required><!--declaramos que el nombre será tipo texto-->
                         <input type="email" placeholder="Email" name="email" required><!--declaramos que el email-->
                         <textarea placeholder="SMS" name="mensaje"></textarea><!--declaramos que el mensaje-->
-                        <input type="submit" value="SEND MESSAGE" required><!--"submit" agregamos un botón para que este envie el mensaje-->
+                        <input type="submit" href="index.html" value="SEND MESSAGE" required><!--"submit" agregamos un botón para que este envie el mensaje-->
                         </form><!--termina el formulario-->
 
                         <?php } ?>
