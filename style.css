@@ -1,0 +1,290 @@
+header .secciones { /*Contiene el estilo de las secciones*/
+    display: flex; /* 'flex' altera las dimensiones y llena el espacio disponible*/
+    justify-content: space-between; /* Justifica el contenido a espacios*/
+
+}
+
+header .lista-menu {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;/*Esto nos sirve para no mostrar ningún marcador en una lista de elementos*/
+    margin-right: 20px; 
+}
+
+a {
+    text-decoration: none;/*Establece que no queremos decoración en esta parte*/
+}
+
+.secciones {
+    max-width: 1280px; /*Establecemos el ancho máximo de un elemento.*/
+    width:90%; /*Establecemos el ancho de un elemento en este caso es 90%*/
+    margin: auto; /*Establece el margen para los cuatro lados.*/
+}
+
+
+#secciones-titulo-flex { 
+    display: flex; 
+    justify-content: center;
+    margin: 18vh 0; 
+    max-width: 1580px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px; /* Especificamos la dimensión de la letra.*/
+    color: #000000; /* Ponemos  el color de la letra*/
+    margin: 0;  /* Especificamos que el margen sea de 0.*/
+}
+
+h2 {
+    font-size: 25px;
+    color: #000000;
+}
+
+.secciones-titulo {
+    text-align: center; /*Centramos el texto dentro de un elemento*/
+}
+
+.secciones-titulo a, #sobre-mi a, #blog a, #que-esperas a, #contacto input[type="submit"] {
+    font-size: 14px;
+    color: #000000;
+    background: #5cb8ff;/*Le agregamos un color de fondo al texto de esta sección*/
+    padding: 14px 24px; /* Se establece el espacio de relleno requerido por todos los lados de los elementos de la sección*/
+    width: 128px;
+    display: inline-block; /*Establece  un ancho y un alto en el elemento.*/
+}
+
+p.logo { /*Color de letra del logo*/
+    color: #000000;
+    font-size: 20px;
+}
+
+nav ul li a { /*Color de las secciones de la pagina*/
+    color:#000000;
+}
+
+
+
+h3 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal; /*Se especifica el peso o grueso de la letra*/
+}
+
+#sobre-mi .secciones-sobremi {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre-mi .texto {
+    width: 80%;
+    text-align: justify;
+    border:1px /*Ponemos el tamaño del borde*/
+}
+
+
+/*SERVICIOS*/
+.servi{
+        justify-content: center;
+        position: relative;
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin:40px 0;
+}
+.miservicio{
+    background-color: rgba(209, 137, 191, 0.856);;/*Color de fondo del texto*/
+    position: relative; /*Especifica cómo el elemento es posicionado en el documento*/
+    width: 280px;
+    height: 350px;
+    margin:5px;
+    overflow: hidden;/*Hace que el navegador oculte todos los contenidos que se salen de la caja del elemento*/
+    border-radius: 15px;/*Ponemos el border en tipo radio de 15px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /*Especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento.*/
+}
+.miservicio .ser  h3{
+    color:#100c18;
+    text-transform: uppercase;/*Fuerza a todos los caracteres a ser convertidos a mayúsculas.*/
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 25px; /*Establece el relleno (espacio) inferior de un elemento.*/
+}
+.servi .miservicio .ser p {
+    color:#0a0807;
+    font-size: 14px;
+    margin: 15px;
+    cursor: pointer;
+}
+.miservicio:hover{
+    background-color: #5f8b89;/*Ponemos el color que queremos de transición, cuando el cursor toque un elemento de esta sección*/
+    transition: .8s;/*Permite definir la transición entre dos estados de un elemento.*/
+}
+.ser img{
+    border-radius: 10px;
+    padding-left: 30%;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+
+/*MIS TRABAJOS*/
+.trabajos{
+    justify-content: center;
+    position: relative;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:40px 0;
+}
+.mis{
+background-color: rgba(209, 137, 191, 0.856);
+position: relative;
+width: 280px;
+height: 150px;
+margin:5px;
+overflow: hidden;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.mis:hover{
+background-color: #5f8b89;
+transition: .8s;
+}
+.tra img{
+border-radius: 10px;
+padding: 50px;
+width: 70%;
+}
+
+
+/*¿POR QÚE TRABAJAR CONMIGO?*/
+.trabajar{
+    justify-content: center;
+    position: relative;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:40px 0;
+}
+.traba{
+background-color: rgba(209, 137, 191, 0.856);
+position: relative;
+width: 280px;
+height: 200px;
+margin:5px;
+overflow: hidden;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.traba .con  h3{
+color:#0d0a13;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 25px;
+text-align: center;
+padding-bottom: 25px;
+}
+.trabajar .traba .con p {
+color:#0a0807;
+font-size: 14px;
+margin: 15px;
+cursor: pointer;
+}
+.traba:hover{
+background-color: #5f8b89;
+transition: .8s;
+}
+
+
+/*SECCIÓN BLOG*/
+#blog .con-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog .publicacion {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc; /*Añadimos efectos de sombra alrededor del marco de los elementos del blog*/
+}
+
+#blog img { /*Tamaño de la imagen*/
+    width: 100%;
+}
+
+#blog .contenido {
+    background: #fff;
+    padding: 20px;
+}
+
+#blog h4 {
+    font-size: 23px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#blog p {
+    color:#5a6169;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+#blog a {
+    width: 87px !important;
+}
+
+
+/*SECCIÓN CONTACTO*/
+#contacto form { /*Damos estulo al formulario*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"] { /*Estilo del texto y del correo*/
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+}
+
+textarea {
+    width: 100%;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+#contacto input[type="submit"] {
+    width: 170px;
+    margin: auto;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.contacto-info img {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;    
+}
